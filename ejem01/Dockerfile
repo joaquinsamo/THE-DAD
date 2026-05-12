@@ -1,8 +1,9 @@
-# Imagen a usar
-FROM php:7.0-apache
-# copiamos todos los ficheros en el directorio en cuestion
-COPY src/ /var/www/html
-# Exponemos el puerto 80
+FROM php:8.2-apache
+
+RUN apt-get update && apt-get install -y \
+    vim \
+    nano
+
+WORKDIR /var/www/html
+
 EXPOSE 80
-# Quien lo ha realizado
-MAINTAINER JL Gonzalez “jlgs@cifpvirgendegracia.com”
