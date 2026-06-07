@@ -1,0 +1,1 @@
+El script permite desplegar rápidamente WordPress y MariaDB utilizando Docker. Sin embargo, presenta limitaciones relacionadas con la portabilidad entre sistemas operativos, la seguridad de credenciales, la gestión de errores y el mantenimiento de versiones.
